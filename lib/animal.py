@@ -10,8 +10,8 @@ class Animal:
         self.add_to_collection(self)
     
     @classmethod
-    def add_to_collection(self, animal):
-        self.all.append(animal)
+    def add_to_collection(cls, animal):
+        cls.all.append(animal)
     
     @classmethod
     def find_by_species(cls, species):
